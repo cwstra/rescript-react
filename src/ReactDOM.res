@@ -63,7 +63,7 @@ module Ref = {
 
 type domProps = {
   ...JsxDOM.domProps,
-  @as("for")
+  @as("htmlFor")
   for_?: string
 }
 
