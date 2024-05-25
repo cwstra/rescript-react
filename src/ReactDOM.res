@@ -63,10 +63,8 @@ module Ref = {
 
 type domProps = {
   ...JsxDOM.domProps,
-  @as("data-modal-target")
-  dataModalTarget?: string,
-  @as("data-modal-toggle")
-  dataModalToggle?: string
+  @as("for")
+  for_?: string
 }
 
 @deprecated("Please use type ReactDOM.domProps")
