@@ -110,3 +110,8 @@ external jsxsKeyed: (string, domProps, ~key: string=?, @ignore unit) => Jsx.elem
 external stringToComponent: string => React.component<'a> = "%identity"
 
 module Style = ReactDOMStyle
+
+let useRef = {
+  let baseRef = React.useRef(Js.Nullable.null)
+  Ref.domRef(baseRef)
+}
