@@ -13,15 +13,15 @@ var Ref = {};
 
 var Props = {};
 
-var baseRef = React.useRef(null);
+function useRef(param) {
+  return React.useRef(null);
+}
 
 var Style;
-
-var useRef = baseRef;
 
 exports.Client = Client;
 exports.Ref = Ref;
 exports.Props = Props;
 exports.Style = Style;
 exports.useRef = useRef;
-/* baseRef Not a pure module */
+/* react Not a pure module */
